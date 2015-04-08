@@ -119,23 +119,7 @@ public class main extends JavaPlugin {
 	}
 	
 	public static short getFromDey(short s){
-		if(s==15){return 0;}
-		if(s==14){return 1;}
-		if(s==13){return 2;}
-		if(s==12){return 3;}
-		if(s==11){return 4;}
-		if(s==10){return 5;}
-		if(s==9){return 6;}
-		if(s==8){return 7;}
-		if(s==7){return 8;}
-		if(s==6){return 9;}
-		if(s==5){return 10;}
-		if(s==4){return 11;}
-		if(s==3){return 12;}
-		if(s==2){return 13;}
-		if(s==1){return 14;}
-		if(s==0){return 15;}
-		return 0;
+		return (15-s);
 	}
 	
 	public boolean canPlace(Player p, Location location, BlockFace b, Integer length){
